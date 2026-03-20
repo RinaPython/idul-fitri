@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amplop Idul Fitri 1445 H - Premium</title>
+    <title>Amplop Idul Fitri 1447 H - Premium</title>
     <!-- Font Awesome 5 (ikon) -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <!-- Google Fonts untuk Arabic -->
@@ -287,6 +287,315 @@
             overflow-y: auto;
             border-radius: 60px 60px 60px 60px;
             box-shadow: 0 40px 70px rgba(0, 0, 0, 0.8), 0 0 0 4px #f7d44a, 0 0 0 8px #1f4d3d;
+            animation: premiumSlideUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            position: relative;
+            background: transparent;
+            
+            scrollbar-width: thin;
+            scrollbar-color: #f7d44a #1f4d3d;
+        }
+
+        .eid-modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .eid-modal-content::-webkit-scrollbar-track {
+            background: #1f4d3d;
+            border-radius: 10px;
+            border: 1px solid #f7d44a;
+        }
+
+        .eid-modal-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #f7d44a, #e6b87e);
+            border-radius: 10px;
+            border: 1px solid #b88633;
+        }
+
+        .eid-modal-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #ffe270, #f7d44a);
+        }
+
+        @keyframes premiumFadeIn {
+            from { opacity: 0; backdrop-filter: blur(0px); }
+            to { opacity: 1; backdrop-filter: blur(15px); }
+        }
+
+        @keyframes premiumSlideUp {
+            from { transform: translateY(100px) scale(0.9); opacity: 0; }
+            to { transform: translateY(0) scale(1); opacity: 1; }
+        }
+
+        .close-eid-modal {
+            position: fixed;
+            top: 25px;
+            right: 35px;
+            color: #fff;
+            font-size: 60px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1002;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+            transition: all 0.3s;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(31, 77, 61, 0.7);
+            border-radius: 50%;
+            border: 3px solid #f7d44a;
+            box-shadow: 0 0 25px rgba(247, 212, 74, 0.5);
+        }
+
+        .close-eid-modal:hover {
+            color: #f7d44a;
+            transform: scale(1.15) rotate(90deg);
+            background: rgba(31, 77, 61, 0.9);
+            box-shadow: 0 0 35px rgba(247, 212, 74, 0.8);
+        }
+
+        @media (max-width: 600px) {
+            .envelope {
+                width: 260px;
+                height: 170px;
+            }
+            .flap {
+                border-left: 130px solid transparent;
+                border-right: 130px solid transparent;
+                border-top: 85px solid #f5b37c;
+            }
+            .envelope-body {
+                height: 85px;
+            }
+            .envelope-sticker, .envelope-sticker-left {
+                width: 45px;
+                height: 45px;
+                font-size: 22px;
+                top: 15px;
+            }
+            .envelope-sticker { right: 15px; }
+            .envelope-sticker-left { left: 15px; }
+            .envelope-text {
+                font-size: 14px;
+                margin: 0 40px;
+                bottom: 10px;
+            }
+            .close-eid-modal {
+                top: 15px;
+                right: 20px;
+                font-size: 45px;
+                width: 55px;
+                height: 55px;
+            }
+            .eid-modal-content::-webkit-scrollbar {
+                width: 5px;
+            }
+        }
+
+        /* Anti view-source */
+        .anti-source {
+            display: none;
+        }
+        
+        /* Gaya untuk konten modal premium */
+        .eid-card {
+            background: linear-gradient(145deg, #fff9ef, #fff2e0);
+            border-radius: 50px;
+            padding: 40px 30px;
+            text-align: center;
+            min-width: 320px;
+            max-width: 550px;
+            margin: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border: 1px solid rgba(247, 212, 74, 0.8);
+        }
+        
+        .arabic-title {
+            font-family: 'Amiri', serif;
+            font-size: 3rem;
+            color: #b4722a;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .tahun-hijriah {
+            background: #1f4d3d;
+            display: inline-block;
+            padding: 8px 25px;
+            border-radius: 40px;
+            color: #f7d44a;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.2);
+            letter-spacing: 2px;
+        }
+        
+        .main-message {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #1f4d3d;
+            margin: 20px 0 15px;
+        }
+        
+        .dua-puluh {
+            font-size: 1.8rem;
+            color: #d4a373;
+            font-weight: 800;
+        }
+        
+        .greeting-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #2c5a48;
+            margin: 20px 0;
+            background: rgba(247, 212, 74, 0.2);
+            padding: 15px;
+            border-radius: 30px;
+        }
+        
+        .signature {
+            margin-top: 25px;
+            font-style: italic;
+            color: #a06534;
+            border-top: 2px dashed #f7d44a;
+            padding-top: 15px;
+            display: inline-block;
+        }
+        
+        .ornament {
+            font-size: 2rem;
+            color: #f7d44a;
+            margin: 15px 0;
+            letter-spacing: 8px;
+        }
+        
+        @media (max-width: 500px) {
+            .eid-card {
+                padding: 25px 20px;
+            }
+            .arabic-title {
+                font-size: 2.2rem;
+            }
+            .main-message {
+                font-size: 1.3rem;
+            }
+            .greeting-text {
+                font-size: 1rem;
+            }
+            .tahun-hijriah {
+                font-size: 1rem;
+                padding: 5px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemen latar dekoratif premium -->
+    <div class="pattern-overlay"></div>
+    <div class="moon-star"><i class="fas fa-moon"></i></div>
+    <div class="star-1"><i class="fas fa-star"></i></div>
+    <div class="star-2"><i class="fas fa-star"></i></div>
+    <div class="star-3"><i class="fas fa-star"></i></div>
+    <div class="star-4"><i class="fas fa-star"></i></div>
+    <div class="star-5"><i class="fas fa-star"></i></div>
+
+    <!-- AMPLOP PREMIUM DI TENGAH -->
+    <div class="envelope-wrapper">
+        <div class="envelope" id="envelope">
+            <div class="flap"></div>
+            <div class="envelope-body"></div>
+            
+            <!-- Stiker kanan atas -->
+            <div class="envelope-sticker" id="envelopeStickerRight">
+                <i class="fas fa-star"></i>
+            </div>
+            
+            <!-- Stiker kiri atas -->
+            <div class="envelope-sticker-left" id="envelopeStickerLeft">
+                <i class="fas fa-star"></i>
+            </div>
+            
+            <!-- Teks "Klik untuk Membuka" -->
+            <div class="envelope-text">
+                ✨ Klik untuk Membuka ✨
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL PREMIUM UNTUK ISI IDUL FITRI 1447 H -->
+    <div class="eid-modal" id="eidModal">
+        <span class="close-eid-modal" id="closeModalBtn">&times;</span>
+        <div class="eid-modal-content" id="eidModalContent">
+            <!-- Konten premium Idul Fitri 1447 H akan dimuat secara dinamis melalui JavaScript -->
+        </div>
+    </div>
+
+    <!-- Elemen kosong untuk mengalihkan perhatian -->
+    <div class="anti-source"></div>
+
+    <script>
+        // ============================================
+        // PROTEKSI ANTI VIEW-SOURCE (DIPERTAHANKAN)
+        // ============================================
+        
+        // 1. Deteksi DevTools
+        (function() {
+            const devtools = {
+                isOpen: false,
+                orientation: undefined
+            };
+            
+            const element = new Image();
+            Object.defineProperty(element, 'id', {
+                get: function() {
+                    devtools.isOpen = true;
+                    handleDevToolsOpen();
+                }
+            });
+            
+            console.log(element);
+            
+            const checkDevTools = function() {
+                const widthThreshold = window.outerWidth - window.innerWidth > 160;
+                const heightThreshold = window.outerHeight - window.innerHeight > 160;
+                
+                if (widthThreshold || heightThreshold) {
+                    devtools.isOpen = true;
+                    handleDevToolsOpen();
+                }
+            };
+            
+            function handleDevToolsOpen() {
+                if (devtools.isOpen) {
+                    document.body.innerHTML = '<div style="text-align: center; padding: 50px; color: white; background: linear-gradient(145deg, #0b3a2e 0%, #1e6b4c 100%); min-height: 100vh;"><h1 style="font-size: 2rem;">🔒 Konten Dilindungi</h1><p style="margin-top: 20px;">Maaf, halaman ini tidak dapat diakses melalui Developer Tools.</p></div>';
+                    throw new Error('Akses ditolak');
+                }
+            }
+            
+            setInterval(checkDevTools, 2000);
+            window.addEventListener('resize', checkDevTools);
+        })();
+
+        // 2. Disable klik kanan
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // 3. Disable shortcut keyboard untuk DevTools & view-source
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || e.keyCode === 123) {
+                e.preventDefault();
+                return false;
+            }
+            if ((e.ctrlKey && e.shiftKey && e.key === 'I') || 
+                (e.metaKey && e.altKey && e.key === 'I')) {
+                e.preventDefault();
+                return false;
+            }
+            if ((e.ctrlKey && e.shiftKey && e.key === 'J') || 
+             0 0 0 4px #f7d44a, 0 0 0 8px #1f4d3d;
             animation: premiumSlideUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
             position: relative;
             background: transparent;
